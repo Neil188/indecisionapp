@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Option = ({ optionText, handleDeleteOption, count }) => (
-    <div>
-        <p>{count}. {optionText}</p>
+    <div className='option'>
+        <p className='option__text'>{count}. {optionText}</p>
         
         <button
+            className='button button--link'
             onClick={e => handleDeleteOption(optionText)}
         >
                 remove

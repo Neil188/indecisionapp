@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 const Action = ({ handlePick, hasOptions }) => (
     <div>
         <button
+            className='big-button'
             onClick={handlePick}
             disabled={!hasOptions}
         >

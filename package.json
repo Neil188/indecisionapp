@@ -1,6 +1,6 @@
 {
   "name": "indecisionapp",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Indecision App - React based application to help make decisions",
   "main": "index.js",
   "scripts": {

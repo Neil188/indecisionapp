@@ -1,7 +1,7 @@
 {
   "name": "indecisionapp",
   "version": "0.1.0",
-  "description": "",
+  "description": "Indecision App - React based application to help make decisions",
   "main": "index.js",
   "scripts": {
     "dev": "live-server public",
@@ -28,6 +28,7 @@
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.5.1",
     "live-server": "^1.2.0",
+    "prettier": "^1.11.1",
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
@@ -44,5 +45,9 @@
   },
   "eslintIgnore": [
     "public/bundle.js"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Neil188/indecisionapp.git"
+  }
 }

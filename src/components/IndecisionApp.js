@@ -10,7 +10,7 @@ export default class IndecisionApp extends Component {
         options: [],
         selectedOption: undefined,
     }
-    
+
     componentDidMount = () => {
         try {
             const options = JSON.parse(localStorage.getItem('options'));
@@ -31,7 +31,7 @@ export default class IndecisionApp extends Component {
             localStorage.setItem('options', json);
         }
     }
-    
+
     handleDeleteOptions = () => {
         this.setState(() => ({ options: [] }));
     }
@@ -90,7 +90,7 @@ export default class IndecisionApp extends Component {
                         />
                     </div>
                 </div>
-                <OptionModal 
+                <OptionModal
                     selectedOption={this.state.selectedOption}
                     handleClearSelectedOption={this.handleClearSelectedOption}
                 />

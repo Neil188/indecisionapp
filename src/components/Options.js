@@ -13,7 +13,7 @@ const Options = ({ options, handleDeleteOptions, handleDeleteOption }) => (
                 Remove All
             </button>
         </div>
-        {!options.length && 
+        {!options.length &&
             <p className='widget__message'>Please add an option to get started</p>}
         {
             options.map((opt, idx) => (
@@ -29,8 +29,8 @@ const Options = ({ options, handleDeleteOptions, handleDeleteOption }) => (
 );
 
 Options.propTypes = {
-    options: PropTypes.arrayOf(PropTypes.string).isRequired, 
-    handleDeleteOptions: PropTypes.func.isRequired, 
+    options: PropTypes.arrayOf(PropTypes.string).isRequired,
+    handleDeleteOptions: PropTypes.func.isRequired,
     handleDeleteOption: PropTypes.func.isRequired,
 }
 

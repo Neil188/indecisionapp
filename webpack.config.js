@@ -1,5 +1,7 @@
 const path = require('path');
 
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
 module.exports = {
     entry: './src/app.js',
     output: {

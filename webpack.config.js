@@ -3,6 +3,7 @@ const path = require('path');
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 module.exports = {
+    mode: process.env.NODE_ENV,
     entry: './src/app.js',
     output: {
         path: path.join(__dirname, 'public'),

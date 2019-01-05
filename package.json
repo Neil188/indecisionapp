@@ -1,50 +1,61 @@
 {
-  "name": "indecisionapp",
-  "version": "1.0.0",
-  "description": "Indecision App - React based application to help make decisions",
-  "main": "index.js",
-  "scripts": {
-    "dev": "live-server public",
-    "build:dev": "webpack",
-    "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server"
-  },
-  "author": "N Lupton",
-  "license": "ISC",
-  "devDependencies": {
-    "@neil188/eslint-config": "^1.0.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.3",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-react": "^1.0.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.14",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "eslint": "^5.2.0",
-    "eslint-plugin-html": "^4.0.3",
-    "live-server": "^1.2.0",
-    "prettier": "^1.13.4",
-    "webpack-dev-server": "^2.11.2"
-  },
-  "dependencies": {
-    "css-loader": "^0.28.11",
-    "node-sass": "^4.9.0",
-    "normalize.css": "^8.0.0",
-    "prop-types": "^15.6.1",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "react-modal": "^3.4.5",
-    "sass-loader": "^6.0.7",
-    "style-loader": "^0.20.3",
-    "webpack": "^3.12.0"
-  },
-  "eslintIgnore": [
-    "public/bundle.js"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Neil188/indecisionapp.git"
-  }
+    "name": "indecisionapp",
+    "version": "1.0.0",
+    "description": "Indecision App - React based application to help make decisions",
+    "main": "index.js",
+    "scripts": {
+        "build:dev": "webpack",
+        "prebuild:prod": "npm run test",
+        "build:prod": "webpack -p --env production",
+        "dev": "live-server public",
+        "dev-server": "webpack-dev-server",
+        "lint": "eslint src",
+        "pretest": "npm run lint",
+        "test": "jest",
+        "predeploy": "npm run build:prod",
+        "deploy": "gh-pages -d public"
+    },
+    "author": "N Lupton",
+    "license": "ISC",
+    "devDependencies": {
+        "@neil188/eslint-config": "^1.6.1",
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-plugin-react": "^1.0.0",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-plugin-transform-react-remove-prop-types": "^0.4.21",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "enzyme": "^3.8.0",
+        "enzyme-adapter-react-16": "^1.7.1",
+        "enzyme-to-json": "^3.3.5",
+        "eslint": "5.6.0",
+        "eslint-plugin-html": "^4.0.6",
+        "gh-pages": "^2.0.1",
+        "jest": "^23.6.0",
+        "live-server": "^1.2.1",
+        "prettier": "^1.15.3",
+        "webpack-dev-server": "^2.11.3"
+    },
+    "dependencies": {
+        "css-loader": "^0.28.11",
+        "node-sass": "^4.11.0",
+        "normalize.css": "^8.0.1",
+        "prop-types": "^15.6.2",
+        "react": "^16.7.0",
+        "react-dom": "^16.7.0",
+        "react-modal": "^3.8.1",
+        "sass-loader": "^6.0.7",
+        "style-loader": "^0.23.1",
+        "webpack": "^3.12.0"
+    },
+    "eslintIgnore": [
+        "public/bundle.js"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Neil188/indecisionapp.git"
+    },
+    "homepage": "https://neil188.github.io/indecisionapp/"
 }
